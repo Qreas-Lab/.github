@@ -1,0 +1,33 @@
+name: Decisión técnica
+description: Propuesta para decidir una tecnología, arquitectura o convención
+title: "[Decisión] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Las decisiones relevantes se registran después como ADR en la
+        documentación interna.
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto y problema
+    validations:
+      required: true
+  - type: textarea
+    id: opciones
+    attributes:
+      label: Opciones consideradas
+      description: Al menos dos, con ventajas, inconvenientes y coste.
+    validations:
+      required: true
+  - type: textarea
+    id: recomendacion
+    attributes:
+      label: Recomendación
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Impacto y riesgos
+      description: Seguridad, protección de datos, costes y mantenimiento.

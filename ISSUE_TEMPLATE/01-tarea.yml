@@ -1,0 +1,33 @@
+name: Tarea
+description: Trabajo concreto con un resultado verificable
+title: "[Tarea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No incluyas credenciales, datos personales ni información de clientes.
+  - type: input
+    id: componente
+    attributes:
+      label: Producto o componente
+      description: Código interno del producto, aplicación o área afectada.
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Qué se quiere conseguir y por qué.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      description: Cómo sabremos que está terminada.
+    validations:
+      required: true
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas y dependencias
